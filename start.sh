@@ -22,7 +22,7 @@ BASEDIR=$(dirname `readlink -f $0`)
 LOCK=$BASEDIR/shutdown.lock
 #Settings:
 SCREENSESSION=starbound
-cmd="$BASEDIR/linux64/launch_starbound_server.sh"
+cmd="$BASEDIR/linux64/starbound_server"
 while true; do
 	if [ -f $LOCK ] ; then
 		rm $LOCK
